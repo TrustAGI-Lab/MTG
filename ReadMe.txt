@@ -2,10 +2,10 @@ MTG -- Source codes and Data used for
 	Shirui Pan, Jia Wu, Xingquan Zhu, Chengqi Zhang, and Philip Yu. Joint Structure Feature Exploration and Regularization for Multi-Task Graph Classification. TKDE, 2015.
 
 Description: 
-	This package includes two variants of MTG, i.e., MTG-l1 and MTG-l21. In general, MTG iteratives solves two subproblems: 
+	This package includes two variants of MTG, i.e., MTG-l1 and MTG-l21. In general, MTG iteratively solves two subproblems: 
 		(1) Multi-task learning (MTL) for vector data with logistic loss function
 		(2) Most discriminative subgraph selection
-	For the first subproblem, we employ MALSAR solver [1] to solve the multi-task problem. For the second subproblem, MTG  mploys a Top K subgraph miner in Java with upper bounds to prune the unpromissing subgraph space.
+	For the first subproblem, we employ MALSAR solver [1] to solve the multi-task problem. For the second subproblem, MTG  mploys a Top K subgraph miner in Java with upper bounds to prune the unpromising subgraph space.
 
 
 Folders and Files:
