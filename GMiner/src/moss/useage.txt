@@ -1,0 +1,54 @@
+usage: java moss.Miner [options] <in> [<out>] [<ids>]
+molecular substructure miner (MoSS)
+version 6.6 (2011.07.07)    (c) 2002-2011 Christian Borgelt
+in      name of graph input file          (mandatory)
+out     name of substructure output file  (default: "moss.sub")
+ids     name of graph identifier file     (default: none)
+-i#     input  format for graphs          (default: smiles)
+-o#     output format for substructures   (default: smiles)
+-f#     seed format (line notation)       (default: smiles)
+-j#     seed structure to start the search from (default: none)
+-x#     node types to exclude (as a graph in seed format, default: H)
+-y#     seed types to exclude (as a graph in seed format, default: none)
+-t#     threshold value for split         (default: 0.5)
+-z      invert split (> versus <= instead of <= versus >)
+-m#     minimum size of a substructure    (default: 1)
+-n#     maximum size of a substructure    (default: no limit)
+-k#     support type (1:MIS, 2:HO, 3:MNI) (default: 0:graphs)
+-s#     minimum support in focus          (default: 10.0%)
+-S#     maximum support in complement     (default: 2.0%)
+        (positive: relative support, negative: absolute support)
+-C      do not restrict the output to closed substructures
+-G      do not use greedy algorithm for MIS computation (slower)
++/-a    match/ignore aromaticity of atoms (default: ignore/-)
++/-c    match/ignore charge of atoms      (default: ignore/-)
++/-d    match/ignore atom type            (default: match/+)
++/-D    match/ignore atom type in rings   (default: match/+)
++/-:    upgrade/downgrade aromatic bonds  (default: extra type)
++/-b    match/ignore bond type            (default: match/+)
++/-B    match/ignore bond type in rings   (default: match/+)
+-K      do not convert Kekule representations to aromatic rings
+-r#:#   mark rings of size # to # edges   (default: no marking)
+-R      extend with rings of marked sizes (default: single edges)
+-E      edge-by-edge support-filtered ring extensions (includes -O)
+-O      do not record substructures with open rings of marked sizes
+-H      find and match variable length chains of carbon atoms
+-g      use rightmost path extensions     (default: maximum source)
+-A      generate all possible extensions  (default: restricted)
+-Q      use node equivalence classes      (default: only types)
++/-P    partial perfect extension pruning (default: no /-)
++/-p    full    perfect extension pruning (default: yes/+)
++/-e    equivalent sibling pruning        (default: no /-)
++/-q    canonical form pruning            (default: yes/+)
++/-h    filter extensions with orbits     (default: yes/+)
+-u#     use embeddings only from level #  (default: 0)
+        (< 0: do not use embeddings at all, 0: use always)
+-M#     maximal number of embeddings per graph       (to save memory)
+-U      unembed siblings of current search tree node (to save memory)
+-N      normalize substructure output form (for result comparisons)
+-v      verbose output during search (print the search tree)
+-T      do not print search statistic (number of embeddings etc.)
+-l      do not search, only convert input to the output format
+-L      do not search, only convert input to a logic format
+
+no arguments given
