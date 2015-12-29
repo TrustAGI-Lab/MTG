@@ -11,7 +11,7 @@ Description:
 Folders and Files:
 	src/ : core scripts for MTG algorithm;
 	MALSAR/ : a solver for solving the MTL problem;
-	GraphMiner : Top-K discriminative subgrpah mining written in JAVA, it also provides source code for subgraph base graph classification, i.e., first mine a set of frequent subgraphs, and then employ SVMs for graph classification;
+	GMiner : Top-K discriminative subgrpah mining written in JAVA, it also provides source code for subgraph base graph classification, i.e., first mine a set of frequent subgraphs, and then employ SVMs for graph classification;
 	data/ : NCI data used in the report
 	mtg_result/ : results obtained from the demo
 
